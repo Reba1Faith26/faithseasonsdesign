@@ -1,0 +1,118 @@
+@media screen and (max-width:1200px){
+    .wrapper{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        row-gap:10px;
+        grid-template-areas:
+        "navigation-wrapper"
+        "menu-content"
+        "main"
+        "footer";
+    }
+    .navigation{
+        grid-area:navigation-wrapper;
+        background-color:black;
+        position:absolute;
+        left:0;
+        right:0;
+        top:0;
+        color:white;
+        font-weight:bolder;
+        font-family:arial;
+        text-align:center;
+    }
+    .menu-btn{
+        float:right;
+        margin-right:10px;
+        margin-top:5px;
+    }
+    .span1,.span2,.span3{
+        height:2px;
+        width:25px;
+        line-height:3px;
+        background-color:white;
+    }
+    .span2,.span3{
+        margin-top:-10px;
+    }
+    /* section of the navigation header end here*/
+    /* section of the navigation-info content start here*/
+    .menu-content{
+        grid-area:menu-content;
+        background-color:black;
+        margin-top:58px;
+        justify-items:center;
+        font-size:20px;
+        line-height:50px;
+        border-top:solid 0.2px white;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        text-align:center;
+        position: absolute;
+        font-weight:bold;
+        font-family:arial;
+        display:none;
+    }
+    
+    li{
+        list-style:none;
+    }
+    .red{
+        background-color:red;
+        justify-items:center;
+        display:grid;
+        position: absolute;
+        left:0;
+        right:0;
+    }
+    a{
+        color:white;
+        text-decoration:none;
+    }
+    /* the infomation about website start here*/
+    .dm-info{
+        grid-area:dm-info;
+        display:grid;
+        justify-items:center;
+        position:absolute;
+        left:0;
+        right:0;
+        background-color:#ffffff;
+        height:200px;
+        font-weight:bolder;
+        font-family:Arial;
+        top:170px;
+        color:white;
+    }
+    .dm-content{
+        display:grid;
+        justify-items:center;
+        position: absolute;
+        left:20px;
+        right:20px;
+        top:10px;
+        height:180px;
+        background-color:red;
+    }
+    .if-caption{
+        margin-top:-50px;
+    }
+    /* the information about the website end here */
+    .footer{
+        grid-area:footer;
+        display:grid;
+        justify-items:center;
+        position:absolute;
+        left:0;
+        right:0;
+        background-color:black;
+        color:white;
+        font-family:arial;
+        font-weight:bolder;
+        font-family:arial;
+        top:470px;
+    }
+    /*footer coding end here*/
+}
